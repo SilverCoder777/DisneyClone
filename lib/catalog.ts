@@ -1,0 +1,122 @@
+export const titles = [
+  {
+    id: "mandalorian",
+    name: "The Mandalorian",
+    brand: "Star Wars",
+    type: "Série",
+    year: 2023,
+    age: 12,
+    duration: "3 saisons",
+    image: "space",
+    color: "#53b5bc",
+    description:
+      "Aux confins de la galaxie, un chasseur de primes solitaire découvre une mission qui bouleverse son destin.",
+  },
+  {
+    id: "avatar",
+    name: "Avatar : La Voie de l’eau",
+    brand: "Star",
+    type: "Film",
+    year: 2022,
+    age: 12,
+    duration: "3 h 12 min",
+    image: "ocean",
+    color: "#4694ca",
+    description:
+      "Un voyage dans les océans de Pandora, où une famille se bat pour protéger ce qui lui est le plus cher.",
+  },
+  {
+    id: "frozen",
+    name: "La Reine des Neiges",
+    brand: "Disney",
+    type: "Film",
+    year: 2013,
+    age: 0,
+    duration: "1 h 42 min",
+    image: "snow",
+    color: "#8abed5",
+    description:
+      "Anna part à la recherche de sa sœur Elsa pour libérer leur royaume d’un hiver éternel.",
+  },
+  {
+    id: "soul",
+    name: "Soul",
+    brand: "Pixar",
+    type: "Film",
+    year: 2020,
+    age: 0,
+    duration: "1 h 40 min",
+    image: "city",
+    color: "#bd8558",
+    description:
+      "Un musicien découvre que les plus beaux moments de la vie se cachent dans les petites choses.",
+  },
+  {
+    id: "lion",
+    name: "Le Roi Lion",
+    brand: "Disney",
+    type: "Film",
+    year: 1994,
+    age: 0,
+    duration: "1 h 28 min",
+    image: "forest",
+    color: "#b89754",
+    description:
+      "Simba grandit et apprend à trouver sa place dans le grand cycle de la vie.",
+  },
+  {
+    id: "cosmos",
+    name: "Cosmos",
+    brand: "National Geographic",
+    type: "Série",
+    year: 2020,
+    age: 6,
+    duration: "1 saison",
+    image: "cosmos",
+    color: "#8c73bc",
+    description:
+      "Une exploration fascinante des étoiles, de la science et de notre place dans l’univers.",
+  },
+  {
+    id: "avengers",
+    name: "Avengers : Endgame",
+    brand: "Marvel",
+    type: "Film",
+    year: 2019,
+    age: 12,
+    duration: "3 h 01 min",
+    image: "heroes",
+    color: "#7755ba",
+    description:
+      "Les héros se réunissent pour une dernière mission qui décidera du destin de l’univers.",
+  },
+  {
+    id: "earth",
+    name: "Notre planète",
+    brand: "National Geographic",
+    type: "Série",
+    year: 2021,
+    age: 0,
+    duration: "8 épisodes",
+    image: "nature",
+    color: "#577b61",
+    description:
+      "Partez à la rencontre des paysages et des espèces qui rendent notre planète extraordinaire.",
+  },
+  {
+    id: "luca",
+    name: "Luca",
+    brand: "Pixar",
+    type: "Film",
+    year: 2021,
+    age: 0,
+    duration: "1 h 35 min",
+    image: "coast",
+    color: "#4b9dba",
+    description:
+      "Sur la Riviera italienne, deux amis vivent un été inoubliable et cachent un merveilleux secret.",
+  },
+];
+export type Title = (typeof titles)[number];
+export const artwork = (image: string, _width = 1200) =>
+  `/artwork/${image}.svg`;
